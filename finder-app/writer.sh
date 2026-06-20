@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if[$# -ne 2 ]; then
+if [$# -ne 2 ]; then
     echo "Error: Two arguments required: <writefile> <writecontent>"
     exit 1
 fi
@@ -20,7 +20,7 @@ fi
 
 echo "$writecontent" > "$writefile"
 
-if[$? -ne 0 ]; then
+if [$? -ne 0 ]; then
     echo "Error: Failed to write to file: $writefile"
     exit 1
 fi
