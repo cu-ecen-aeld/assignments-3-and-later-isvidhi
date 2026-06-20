@@ -16,4 +16,4 @@ fi
 a_num=$(find "$filedir" -type f | wc -l)
 b_num=$(grep -r "$searchpattern" "$filedir" | wc -l)
 
-echo "Number of files are $a_num , Number of matching line: $b_num"
+echo "The number of files are $a_num and the number of matching lines are $b_num"
